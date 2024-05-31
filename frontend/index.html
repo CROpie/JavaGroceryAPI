@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>Add Grocery as formData</h3>
+    <!-- <form id="addItemForm" method="POST" action="http://localhost:8080/api/groceries"> -->
+    <form id="postForm">
+      <label for="itemName">Item Name:</label>
+      <input type="text" id="itemName" name="itemName" />
+      <label for="itemAmount">Amount:</label>
+      <input type="text" id="itemAmount" name="amount" />
+      <button type="submit" name="addItemBtn">Submit</button>
+    </form>
+
+    <h3>Existing Groceries</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>id</th>
+          <th>itemName</th>
+          <th>amount</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody"></tbody>
+    </table>
+  </body>
+</html>

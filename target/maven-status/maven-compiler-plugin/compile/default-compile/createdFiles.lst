@@ -1,4 +1,5 @@
 Groceries/GroceryController.class
 Groceries/GroceryApplication.class
 Groceries/GroceryRepository.class
+Groceries/CorsConfig.class
 Groceries/Grocery.class

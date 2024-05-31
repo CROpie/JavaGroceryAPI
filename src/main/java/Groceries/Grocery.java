@@ -14,6 +14,14 @@ public class Grocery {
     private String itemName;
     private Integer amount;
 
+    // not sure why this "default constructor" is needed
+    Grocery() {}
+
+    Grocery(String itemName, Integer amount) {
+        this.itemName = itemName;
+        this.amount = amount;
+    }
+
     public Integer getId() {
         return this.id;
     }
@@ -36,6 +44,11 @@ public class Grocery {
 
     public void setAmount(Integer amount) {
         this.amount = amount;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("{ itemName: %s, amount: %d }", this.itemName, this.amount);
     }
 
 
